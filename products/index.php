@@ -86,7 +86,7 @@ function generate_pagination($total, $type, $current): string
     <meta name="description" content="A site to portray the different products provided by Herbal Products">
     <meta name="author" content="Junior Lawrence Kibirige junkib94@gmail.com">
     <meta name="keywords" content=" Herbal Products, Herbal, Natural Medicine, Medicine, Natural" />
-    <title>Products : Herbal Products</title>
+    <title>Products : Giant Herbal Remedies</title>
     <link rel="canonical" href="/">
     <link rel="stylesheet" href="/assets/bootstrap/5.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/bootstrap-icons/1.7.2/font/bootstrap-icons.css">
@@ -3446,7 +3446,7 @@ background-origin: border-box;">
         <section class="py-5 text-center container">
             <div class="row py-lg-5">
                 <div class="col-lg-6 col-md-8 mx-auto">
-                    <h1>Herbal Products' Products</h1>
+                    <h1>Giant Herbal Remedies' Products</h1>
                 </div>
                 <p class="lead muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, dolorum quae ea quam doloribus eos hic quod amet consequatur laborum voluptatem dolores iste. Quo nostrum sapiente autem, modi animi eveniet.</p>
             </div>
@@ -3456,9 +3456,15 @@ background-origin: border-box;">
                 <!-- <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"> -->
                 <?php
                 $products = glob('images/*.jpg');
+                $data_string = file_get_contents('./../products.json');
+                if ($data_string === false) echo "<script>alert('No products found.');</script>";
+                $data = json_decode($data_string, true);
+                if ($data === null) {
+                    echo "<script>alert('An error occurred getting products!.');</script>";
+                }
                 $i = 1;
                 $counter = 0;
-                $pages = roundOff(70 / 8);
+                $pages = roundOff(70 / 6);
                 for ($j = 0; $j < 70; $j++) {
                     $visibility = $i == 1 ? "flex;" : "none;";
                     if ($counter <= 0) {
@@ -3468,8 +3474,8 @@ background-origin: border-box;">
                     <div class="col" data-fieldset="<?php echo $i; ?>" data-record="<?php echo ($counter++) + 1 ?>">
                         <div class="card shadow-sm">
                             <?php
-                            if ($j < count($products)) {
-                                echo '<img src="' . $products[$j] . '" 
+                            if ($j < count($data)) {
+                                echo '<img src="' . $data[$j]['image'] . '" 
                                     class="bd-placeholder-img card-img-top" 
                                     width="100%" height="225" aria-label="Placeholder: Product ' . $j . '" 
                                     aria-hidden="true" tabindex="' . $j . '"
@@ -3482,8 +3488,14 @@ background-origin: border-box;">
                                 </svg>
                             <?php } ?>
                             <div class="card-body">
-                                <p class="card-text">
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, aut.
+                                <p class="card-text" style="display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden;">
+                                    <?php if ($j < count($data)) {
+                                        echo $data[$j]['description'];
+                                    } else {
+                                        ?>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, voluptate libero animi a minima nam pariatur voluptates optio amet at et nisi id quo officia hic labore qui facere ducimus.
+                                        <?php
+                                    } ?>
                                 </p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
@@ -3496,7 +3508,7 @@ background-origin: border-box;">
                     </div>
 
                 <?php
-                    if ($counter % 8 === 0 || $counter === 70) {
+                    if ($counter % 6 === 0 || $counter === 70) {
                         echo '<br/><hr style="width: 100%;"></fieldset>';
                         echo generate_pagination($pages, 'products', $i);
                         if ($i++ < $pages) {

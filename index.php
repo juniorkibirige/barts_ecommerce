@@ -8,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="A site to portray the different products provided by Herbal Products">
   <meta name="author" content="Junior Lawrence Kibirige junkib94@gmail.com">
-  <title>Herbal Products</title>
+  <title>Giant Herbal Remedies</title>
   <link rel="canonical" href="/">
   <link rel="stylesheet" href="assets/bootstrap/5.1.3/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/bootstrap-icons/1.7.2/font/bootstrap-icons.css">
@@ -36,7 +36,7 @@
   <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
     <header class="mb-auto">
       <div class="">
-        <h3 class="float-md-start mb-0">Herbal Products</h3>
+        <h3 class="float-md-start mb-0">Giant Herbal Remedies</h3>
         <nav class="nav nav-masthead justify-content-center float-md-end">
           <a href="javascript:void(0)" class="nav-link active" aria-current="page">Home</a>
           <a href="/products" class="nav-link">Products</a>
@@ -46,7 +46,7 @@
     </header>
     <main class="px-3">
       <h1>
-        Welcome to Herbal Products
+        Welcome to Giant Herbal Remedies Products
       </h1>
       <p class="lead">
         The home of the leading herbal products provider across the globe.
