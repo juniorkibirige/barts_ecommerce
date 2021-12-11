@@ -83,14 +83,16 @@ function generate_pagination($total, $type, $current): string
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="A site to portray the different products provided by Herbal Products">
+    <meta name="description" content="Giant Herbal Remedies makes Herbal remedies using fresh & Herbal natural ingredients. All of our natural remedies are processed in small batches with high quality, natural, herbal ingredients, for maximum healing power.
+We are committed to offering the highest quality, natural remedies possible.">
     <meta name="author" content="Junior Lawrence Kibirige junkib94@gmail.com">
-    <meta name="keywords" content=" Herbal Products, Herbal, Natural Medicine, Medicine, Natural" />
+    <meta name="keywords" content="products">
+    <?php include_once 'includes/met.inc.php' ?>
     <title>Products : Giant Herbal Remedies</title>
     <link rel="canonical" href="/">
     <link rel="stylesheet" href="/assets/bootstrap/5.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/bootstrap-icons/1.7.2/font/bootstrap-icons.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
     <style>
         .bd-placeholder-img {
             font-size: 1.125rem;
@@ -3414,8 +3416,9 @@ background-origin: border-box;">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-8 col-md-7 py-4">
-                            <h4 class="text-white">Products</h4>
-                            <p class="text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur eos ea cumque rem aliquam earum fuga possimus eaque itaque temporibus fugit saepe ut in doloribus eveniet facilis quis, nemo vel.</p>
+                            <h4 class="text-white">Giant Herbal Remedies</h4>
+                            <p class="text-muted">Giant Herbal Remedies makes Herbal remedies using fresh & Herbal natural ingredients. All of our natural remedies are processed in small batches with high quality, natural, herbal ingredients, for maximum healing power.
+                                We are committed to offering the highest quality, natural remedies possible.</p>
                         </div>
                         <div class="col-sm-4 offset-md-1 py-4">
                             <h4 class="text-white">Contact</h4>
@@ -3431,8 +3434,8 @@ background-origin: border-box;">
         </div>
         <div class="navbar navbar-dark bg-dark shadow-sm">
             <div class="container">
-                <a href="#" class="navbar-brand d-flex align-items-center">
-                    <i class="bi bi-credit-card mr-2"></i>
+                <a href="/" class="navbar-brand d-flex align-items-center">
+                    <img src="/images/favicon-32x32.png" class="bi bi-credit-card mr-2"></img>
                     &MediumSpace;
                     <strong>Products</strong>
                 </a>
@@ -3448,7 +3451,6 @@ background-origin: border-box;">
                 <div class="col-lg-6 col-md-8 mx-auto">
                     <h1>Giant Herbal Remedies' Products</h1>
                 </div>
-                <p class="lead muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, dolorum quae ea quam doloribus eos hic quod amet consequatur laborum voluptatem dolores iste. Quo nostrum sapiente autem, modi animi eveniet.</p>
             </div>
         </section>
         <div class="album py-5 bg-light text-black" style="--bs-bg-opacity: 0.4;">
@@ -3492,9 +3494,9 @@ background-origin: border-box;">
                                     <?php if ($j < count($data)) {
                                         echo $data[$j]['description'];
                                     } else {
-                                        ?>
+                                    ?>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, voluptate libero animi a minima nam pariatur voluptates optio amet at et nisi id quo officia hic labore qui facere ducimus.
-                                        <?php
+                                    <?php
                                     } ?>
                                 </p>
                                 <div class="d-flex justify-content-between align-items-center">

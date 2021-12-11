@@ -3,16 +3,18 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="A site to portray the different products provided by Herbal Products">
+  <meta name="description" content="Giant Herbal Remedies makes Herbal remedies using fresh & Herbal natural ingredients. All of our natural remedies are processed in small batches with high quality, natural, herbal ingredients, for maximum healing power.
+We are committed to offering the highest quality, natural remedies possible.">
   <meta name="author" content="Junior Lawrence Kibirige junkib94@gmail.com">
+  <?php include_once 'includes/met.inc.php' ?>
   <title>Giant Herbal Remedies</title>
   <link rel="canonical" href="/">
   <link rel="stylesheet" href="assets/bootstrap/5.1.3/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/bootstrap-icons/1.7.2/font/bootstrap-icons.css">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <style>
     .bd-placeholder-img {
       font-size: 1.125rem;
@@ -36,7 +38,7 @@
   <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
     <header class="mb-auto">
       <div class="">
-        <h3 class="float-md-start mb-0">Giant Herbal Remedies</h3>
+        <h3 class="float-md-start mb-0"><img src="/images/favicon-32x32.png" alt="" class=""> Giant Herbal Remedies</h3>
         <nav class="nav nav-masthead justify-content-center float-md-end">
           <a href="javascript:void(0)" class="nav-link active" aria-current="page">Home</a>
           <a href="/products" class="nav-link">Products</a>
@@ -49,10 +51,8 @@
         Welcome to Giant Herbal Remedies Products
       </h1>
       <p class="lead">
-        The home of the leading herbal products provider across the globe.
-        Herbal products are medicines derived from plants. They are used as supplements to 
-        improve health and well being, and may be used for other therapeutic purposes. Herbal 
-        products are available as tablets, capsules, powders, extracts, teas and so on.
+        Giant Herbal Remedies makes Herbal remedies using fresh & Herbal natural ingredients. All of our natural remedies are processed in small batches with high quality, natural, herbal ingredients, for maximum healing power.
+        We are committed to offering the highest quality, natural remedies possible.
       </p>
       <p class="lead">
         <a href="/products" class="btn btn-lg btn-secondary fw-bold border-white bg-white">View Products</a>
@@ -60,7 +60,7 @@
     </main>
     <footer class="mt-auto text-white-50">
       <p>
-        <small>Created with <i class="bi bi-heart-fill text-danger"></i> by Lawrence Junior Kibirige</small> 
+        <small>Created with <i class="bi bi-heart-fill text-danger"></i> by Lawrence Junior Kibirige</small>
       </p>
     </footer>
   </div>
