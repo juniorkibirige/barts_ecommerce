@@ -3517,7 +3517,6 @@ background-origin: border-box;">
                         }
                     }
                 }
-                // generate_pagination(70, 'products', 0);
                 ?>
                 <!-- </div> -->
             </div>
