@@ -3466,8 +3466,8 @@ background-origin: border-box;">
                 }
                 $i = 1;
                 $counter = 0;
-                $pages = roundOff(70 / 6);
-                for ($j = 0; $j < 70; $j++) {
+                $pages = roundOff(count($products) / 6);
+                for ($j = 0; $j < count($products); $j++) {
                     $visibility = $i == 1 ? "flex;" : "none;";
                     if ($counter <= 0) {
                         echo '<fieldset class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" data-products-page="' . $i . '"  style="display: ' . $visibility . '">';
@@ -3510,7 +3510,7 @@ background-origin: border-box;">
                     </div>
 
                 <?php
-                    if ($counter % 6 === 0 || $counter === 70) {
+                    if ($counter % 6 === 0 || $counter === count($products)) {
                         echo '<br/><hr style="width: 100%;"></fieldset>';
                         echo generate_pagination($pages, 'products', $i);
                         if ($i++ < $pages) {
