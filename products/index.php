@@ -3423,9 +3423,10 @@ background-origin: border-box;">
                         <div class="col-sm-4 offset-md-1 py-4">
                             <h4 class="text-white">Contact</h4>
                             <ul class="list-unstyled">
-                                <li><a href="#" class="text-white" style="text-decoration: none;">Follow on &nbsp; <i class="bi bi-twitter" style="color: aqua;"></i></a></li>
-                                <li><a href="#" class="text-white" style="text-decoration: none;">Like on &nbsp; <i class="bi bi-facebook" style="color: blue;"></i></a></li>
-                                <li><a href="#" class="text-white" style="text-decoration: none;">Email me <i class="bi bi-envelope-check-fill" style="color: grey;"></i></a></li>
+                                <li><a target="blank" href="//www.linkedin.com/in/giant-herbal-remedies" style="text-decoration: none;" class="text-white">Linked In <i class="bi bi-linkedin" style="color: #0a66c2;"></i></a></li>
+                                <li><a target="blank" href="//www.facebook.com/Giant-Herbal-Remedies-100966782436880/" class="text-white" style="text-decoration: none;">Like on <i class="bi bi-facebook" style="color: #0d6efd;"></i></a></li>
+                                <li><a target="blank" href="//twitter.com/GiantRemedies" class="text-white" style="text-decoration: none;">Follow on &nbsp; <i class="bi bi-twitter" style="color: aqua;"></i></a></li>
+                                <li><a target="blank" href="mailto:giantherbalrems@gmail.com" class="text-white" style="text-decoration: none;">Email me <i class="bi bi-envelope-check-fill" style="color: grey;"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -3501,7 +3502,7 @@ background-origin: border-box;">
                                 </p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button class="btn btn-sm btn-outline-secondary" type="button">View Product</button>
+                                        <button class="btn btn-sm btn-outline-secondary" type="button" data-bs-toggle="modal" data-bs-target="#<?php echo $data[$j]['id']; ?>">View Product</button>
                                     </div>
                                     <small class="text-muted"><?php echo time_elapsed_string('@' . rand(strtotime('-5 months'), time())); ?></small>
                                 </div>
@@ -3519,7 +3520,35 @@ background-origin: border-box;">
                         }
                     }
                 }
-                ?>
+                ?><div id='modals'><?php
+                                    for ($i = 0; $i < count($products); $i++) {
+                                    ?>
+                        <div class="modal fade" id="<?php echo $data[$i]['id']; ?>">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="<?php echo $data[$i]['id']; ?>Label"><?php echo $data[$i]['title']; ?></h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <?php echo '<img src="' . $data[$i]['image'] . '" 
+                                    class="bd-placeholder-img card-img-top" 
+                                    width="100%" height="225" aria-label="Placeholder: Product ' . $i . '" 
+                                    aria-hidden="true" tabindex="' . $i . '"
+                                />'; ?>
+                                <br><hr><br>
+                                <p class="card-text">
+                                    
+                                        <?php echo $data[$i]['description']; ?>
+                                </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <?php
+                                    }
+                    ?>
+                </div>
                 <!-- </div> -->
             </div>
         </div>

@@ -831,7 +831,6 @@ We are committed to offering the highest quality, natural remedies possible.">
       user-select: none;
       pointer-events: none;
       -webkit-user-drag: none;
-      user-drag: none;
     }
 
     .mbr-section__comments .row {
@@ -2514,16 +2513,17 @@ We are committed to offering the highest quality, natural remedies possible.">
         <div class="alert alert-danger">
           No testimonials uploaded yet
         </div>
-      <?php
-      } else {
-      $data = json_decode($data_string, true);
-      if ($data === null) {
-        ?>
-        <div class="alert alert-warning">
-          Testimonials found. But an error occured during parsing!
-        </div>
         <?php
-      }}
+      } else {
+        $data = json_decode($data_string, true);
+        if ($data === null) {
+        ?>
+          <div class="alert alert-warning">
+            Testimonials found. But an error occured during parsing!
+          </div>
+      <?php
+        }
+      }
       ?>
       <div id="testimonials-slider1-3-carousel" class="carousel clide" data-ride="carousel" role="listbox">
         <div class="carousel-inner">
@@ -2549,6 +2549,8 @@ We are committed to offering the highest quality, natural remedies possible.">
   <script src="/assets/jquery/3.6.0/jquery.min.js"></script>
   <script src="/assets/popperjs/core/2.10.2/popper.min.js"></script>
   <script src="/assets/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+  <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+
 </body>
 
 </html>
