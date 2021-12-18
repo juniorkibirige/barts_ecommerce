@@ -11,6 +11,7 @@ We are committed to offering the highest quality, natural remedies possible.">
 <meta name="keywords" content=" Herbal Products, Herbal, Natural Medicine, Medicine, Natural" />
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JWEXB3YNKM"></script>
+<link rel="canonical" href="<?php echo 'http' . (($_SERVER['SERVER_PORT'] == 443) ? 's://' : '://') . $_SERVER['HTTP_HOST']; ?>/">
 <script>
   window.dataLayer = window.dataLayer || [];
 
@@ -20,10 +21,4 @@ We are committed to offering the highest quality, natural remedies possible.">
   gtag('js', new Date());
 
   gtag('config', 'G-JWEXB3YNKM');
-</script>
-<script type='text/javascript'>
-  var link = !!document.querySelector("link[rel='canonical']") ? document.querySelector("link[rel='canonical']") : document.createElement('link');
-  link.setAttribute('rel', 'canonical');
-  link.setAttribute('href', location.protocol + '//' + location.host);
-  document.head.appendChild(link);
 </script>

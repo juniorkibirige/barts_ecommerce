@@ -11,7 +11,6 @@ We are committed to offering the highest quality, natural remedies possible.">
   <?php include_once '../includes/met.inc.php' ?>
   <meta name="keywords" content="about">
   <title>About : Giant Herbal Remedies</title>
-  <link rel="canonical" href="/">
   <link rel="stylesheet" href="/assets/bootstrap/5.1.3/css/bootstrap.min.css">
   <link rel="stylesheet" href="/assets/bootstrap-icons/1.7.2/font/bootstrap-icons.css">
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
