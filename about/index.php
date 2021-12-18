@@ -8,7 +8,7 @@
   <meta name="description" content="Giant Herbal Remedies makes Herbal remedies using fresh & Herbal natural ingredients. All of our natural remedies are processed in small batches with high quality, natural, herbal ingredients, for maximum healing power.
 We are committed to offering the highest quality, natural remedies possible.">
   <meta name="author" content="Junior Lawrence Kibirige junkib94@gmail.com">
-  <?php include_once 'includes/met.inc.php' ?>
+  <?php include_once '../includes/met.inc.php' ?>
   <meta name="keywords" content="about">
   <title>About : Giant Herbal Remedies</title>
   <link rel="canonical" href="/">

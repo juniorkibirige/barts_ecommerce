@@ -96,7 +96,7 @@ function get_domain($url)
 We are committed to offering the highest quality, natural remedies possible.">
     <meta name="author" content="Junior Lawrence Kibirige junkib94@gmail.com">
     <meta name="keywords" content="products">
-    <?php include_once 'includes/met.inc.php' ?>
+    <?php include_once '../includes/met.inc.php' ?>
     <title>Products : Giant Herbal Remedies</title>
     <link rel="canonical" href="/">
     <link rel="stylesheet" href="/assets/bootstrap/5.1.3/css/bootstrap.min.css">
