@@ -2439,7 +2439,6 @@ We are committed to offering the highest quality, natural remedies possible.">
 </head>
 
 <body style="background-color: cadetblue;">
-
   <section class="header1 cid-qyvisAZ1Bw">
     <div class="container">
       <div class="row justify-content-md-center text-center">

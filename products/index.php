@@ -3423,9 +3423,10 @@ background-origin: border-box;">
                         <div class="col-sm-4 offset-md-1 py-4">
                             <h4 class="text-white">Contact</h4>
                             <ul class="list-unstyled">
-                                <li><a target="blank" href="//www.linkedin.com/in/giant-herbal-remedies" style="text-decoration: none;" class="text-white">Linked In <i class="bi bi-linkedin" style="color: #0a66c2;"></i></a></li>
-                                <li><a target="blank" href="//www.facebook.com/Giant-Herbal-Remedies-100966782436880/" class="text-white" style="text-decoration: none;">Like on <i class="bi bi-facebook" style="color: #0d6efd;"></i></a></li>
-                                <li><a target="blank" href="//twitter.com/GiantRemedies" class="text-white" style="text-decoration: none;">Follow on &nbsp; <i class="bi bi-twitter" style="color: aqua;"></i></a></li>
+                                <li><a target="blank" href="https://bit.ly/giantherbalrems_in" style="text-decoration: none;" class="text-white">Linked In <i class="bi bi-linkedin" style="color: #0a66c2;"></i></a></li>
+                                <li><a target="blank" href="https://bit.ly/giantherbalrems_fb" class="text-white" style="text-decoration: none;">Like on <i class="bi bi-facebook" style="color: #0d6efd;"></i></a></li>
+                                <li><a target="blank" href="https://bit.ly/giantherbalrems_twitter" class="text-white" style="text-decoration: none;">Follow on &nbsp; <i class="bi bi-twitter" style="color: aqua;"></i></a></li>
+                                <li><a target="blank" href="https://bit.ly/giantherbalrems_ig" class="text-white" style="text-decoration: none;">Follow on &nbsp; <i class="bi bi-instagram" style=""></i></a></li>
                                 <li><a target="blank" href="mailto:giantherbalrems@gmail.com" class="text-white" style="text-decoration: none;">Email me <i class="bi bi-envelope-check-fill" style="color: grey;"></i></a></li>
                             </ul>
                         </div>
