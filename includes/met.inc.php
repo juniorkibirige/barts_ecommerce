@@ -1,3 +1,11 @@
+<?php 
+if (empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] === "off") {
+  $location = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+  header('HTTP/1.1 301 Moved Permanently');
+  header('Location: ' . $location);
+  exit;
+}
+?>
 <meta property="og:type" content="website">
 <meta property="og:type" content="<?php echo 'http' . (($_SERVER['SERVER_PORT'] == 443) ? 's://' : '://') . $_SERVER['HTTP_HOST']; ?>">
 <meta property="og:title" content="Giant Herbal Remedies">
