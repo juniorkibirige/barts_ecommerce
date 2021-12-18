@@ -75,6 +75,15 @@ function generate_pagination($total, $type, $current): string
     $pagination .= "</div>";
     return $pagination;
 }
+function get_domain($url)
+{
+    $pieces = parse_url($url);
+    $domain = isset($pieces['host']) ? $pieces['host'] : $pieces['path'];
+    if (preg_match('/(?P<domain>[a-z0-9][a-z0-9\-]{1,63}\.[a-z\.]{2,6})$/i', $domain, $regs)) {
+        return $regs['domain'];
+    }
+    return false;
+}
 ?>
 <!doctype html>
 <html lang="en" class="h-100">
@@ -89,7 +98,7 @@ We are committed to offering the highest quality, natural remedies possible.">
     <meta name="keywords" content="products">
     <?php include_once 'includes/met.inc.php' ?>
     <title>Products : Giant Herbal Remedies</title>
-    <link rel="canonical" href="/">
+    <link rel="canonical" href="">
     <link rel="stylesheet" href="/assets/bootstrap/5.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/bootstrap-icons/1.7.2/font/bootstrap-icons.css">
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
@@ -3537,11 +3546,12 @@ background-origin: border-box;">
                                     width="100%" height="225" aria-label="Placeholder: Product ' . $i . '" 
                                     aria-hidden="true" tabindex="' . $i . '"
                                 />'; ?>
-                                <br><hr><br>
-                                <p class="card-text">
-                                    
-                                        <?php echo $data[$i]['description']; ?>
-                                </p>
+                                        <br>
+                                        <hr><br>
+                                        <p class="card-text">
+
+                                            <?php echo $data[$i]['description']; ?>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
