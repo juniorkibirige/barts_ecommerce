@@ -39,3 +39,5 @@ We are committed to offering the highest quality, natural remedies possible.">
 
   gtag('config', 'G-JWEXB3YNKM');
 </script> -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4700591257043183"
+     crossorigin="anonymous"></script>
