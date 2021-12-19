@@ -14,7 +14,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   gtag('config', 'UA-206096373-2');
 </script>
-
+<script data-ad-client="ca-pub-4700591257043183" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <meta property="og:type" content="website">
 <meta property="og:type" content="<?php echo 'http' . (($_SERVER['SERVER_PORT'] == 443) ? 's://' : '://') . $_SERVER['HTTP_HOST']; ?>">
 <meta property="og:title" content="Giant Herbal Remedies">
