@@ -34,6 +34,10 @@ We are committed to offering the highest quality, natural remedies possible.">
 </head>
 
 <body class="d-flex h-100 text-center text-white bg-dark" style="background: url('assets/images/wallpaper.jpeg') no-repeat; background-size: cover; ">
+<!-- Google Tag Manager (noscript) -->
+<!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PVR4VKL"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
+<!-- End Google Tag Manager (noscript) -->
   <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
     <header class="mb-auto">
       <div class="">
