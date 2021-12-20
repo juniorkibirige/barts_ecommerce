@@ -25,7 +25,7 @@ We are committed to offering the highest quality, natural remedies possible.">
 <meta property="twitter:description" content="Giant Herbal Remedies makes Herbal remedies using fresh & Herbal natural ingredients. All of our natural remedies are processed in small batches with high quality, natural, herbal ingredients, for maximum healing power.
 We are committed to offering the highest quality, natural remedies possible.">
 <meta property="twitter:image" content="/images/android-chrome-512x512.png">
-<meta name="keywords" content=" Herbal Products, Herbal, Natural Medicine, Medicine, Natural" />
+<meta name="keywords" content=" Herbal Products, Herbal, Natural Medicine, Medicine, Natural, Giant Herbal Remedies, giantherbalrems, herbalrems, giant herbal" />
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-JWEXB3YNKM"></script> -->
 <link rel="canonical" href="<?php echo 'http' . (($_SERVER['SERVER_PORT'] == 443) ? 's://' : '://') . $_SERVER['HTTP_HOST']; ?>/">

@@ -2438,10 +2438,14 @@ We are committed to offering the highest quality, natural remedies possible.">
 </head>
 
 <body style="background-color: cadetblue;">
-<!-- Google Tag Manager (noscript) -->
-<!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PVR4VKL"
+  <!-- Google Tag Manager (noscript) -->
+  <!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PVR4VKL"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
-<!-- End Google Tag Manager (noscript) -->
+  <!-- End Google Tag Manager (noscript) -->
+  <div class="bg-dark">
+    <?php $active = 'about';
+    include('../includes/nav.php') ?>
+  </div>
   <section class="header1 cid-qyvisAZ1Bw">
     <div class="container">
       <div class="row justify-content-md-center text-center">
@@ -2455,7 +2459,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             We are committed to offering the highest quality, natural remedies possible.
           </p>
           <div class="mbr-section-btn align-center">
-            <a href="#form1-4" class="btn btn-md btn-black-outline display-4">CONTACT US</a>
+            <a href="#form1-4" data-bs-toggle="modal" class="btn btn-md btn-black-outline display-4">CONTACT US</a>
           </div>
         </div>
       </div>
@@ -2543,16 +2547,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
   </section>
-  <footer class="mt-auto text-white-50 text-center">
-    <p>
-      <small>Created with <i class="bi bi-heart-fill text-danger"></i> by Lawrence Junior Kibirige</small>
-    </p>
-  </footer>
+  <?php include('../includes/footer.inc.php'); ?>
   <script src="/assets/jquery/3.6.0/jquery.min.js"></script>
   <script src="/assets/popperjs/core/2.10.2/popper.min.js"></script>
   <script src="/assets/bootstrap/5.1.3/js/bootstrap.min.js"></script>
   <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 
+  <?php
+  include('../includes/modals/all_modals.php');
+  ?>
 </body>
 
 </html>

@@ -31,21 +31,52 @@ We are committed to offering the highest quality, natural remedies possible.">
   </style>
   <meta name="theme-color" content="#7952b3">
   <link rel="stylesheet" href="assets/-/cover.css">
+  <style>
+    .navbar-expand-lg .navbar-nav .nav-link {
+      padding-right: .5rem;
+      padding-left: .5rem;
+    }
+
+    .navbar-expand-lg .navbar-nav {
+      flex-direction: row;
+    }
+  </style>
 </head>
 
-<body class="d-flex h-100 text-center text-white bg-dark" style="background: url('assets/images/wallpaper.jpeg') no-repeat; background-size: cover; ">
-<!-- Google Tag Manager (noscript) -->
-<!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PVR4VKL"
+<body class="h-100 text-center text-white bg-dark" style="background: url('assets/images/wallpaper.jpeg') no-repeat; background-size: cover; ">
+  <!-- Google Tag Manager (noscript) -->
+  <!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PVR4VKL"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
-<!-- End Google Tag Manager (noscript) -->
+  <!-- End Google Tag Manager (noscript) -->
   <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-    <header class="mb-auto">
+    <header class="">
       <div class="">
-        <h3 class="float-md-start mb-0"><img src="/images/favicon-32x32.png" alt="" class=""> Giant Herbal Remedies</h3>
-        <nav class="nav nav-masthead justify-content-center float-md-end">
-          <a href="javascript:void(0)" class="nav-link active" aria-current="page">Home</a>
-          <a href="/products" class="nav-link">Products</a>
-          <a href="/about" class="nav-link">About</a>
+        <?php $active = '/'; ?>
+        <nav class="navbar bg-dark navbar-dark navbar-expand-lg justify-content-center">
+          <div class="container-fluid">
+            <a class="navbar-brand">
+            <img src="/images/favicon-32x32.png" class="bi bi-credit-card mr-2">
+              Giant Herbal Remedies</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a href="<?php if ($active == '/') echo 'javascript:void(0)';
+                            else echo '/'; ?>" class="nav-link <?php if ($active == '/') echo 'active'; ?>" aria-current="page">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="<?php if ($active == 'products') echo 'javascript:void(0)';
+                            else echo '/products'; ?>" class="nav-link <?php if ($active == 'products') echo 'active'; ?>">Products</a>
+                </li>
+                <li class="nav-item">
+                  <a href="<?php if ($active == 'about') echo 'javascript:void(0)';
+                            else echo '/about'; ?>" class="nav-link <?php if ($active == 'about') echo 'active'; ?>">About</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
       </div>
     </header>
@@ -61,12 +92,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <a href="/products" class="btn btn-lg btn-secondary fw-bold border-white bg-white">View Products</a>
       </p>
     </main>
-    <footer class="mt-auto text-white-50">
-      <p>
-        <small>Created with <i class="bi bi-heart-fill text-danger"></i> by Lawrence Junior Kibirige</small>
-      </p>
-    </footer>
   </div>
+  <?php include('includes/footer.inc.php'); ?>
   <!-- Scripts -->
   <script src="assets/jquery/3.6.0/jquery.min.js"></script>
   <script src="assets/popperjs/core/2.10.2/popper.min.js"></script>

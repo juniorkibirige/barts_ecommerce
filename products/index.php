@@ -29,6 +29,8 @@ function time_elapsed_string($datetime, $full = false)
     return $string ? implode(', ', $string) . ' ago' : 'just now';
 }
 
+$active = 'products';
+
 /**
  * @param $pages
  * @return int
@@ -95,7 +97,7 @@ function get_domain($url)
     <meta name="description" content="Giant Herbal Remedies makes Herbal remedies using fresh & Herbal natural ingredients. All of our natural remedies are processed in small batches with high quality, natural, herbal ingredients, for maximum healing power.
 We are committed to offering the highest quality, natural remedies possible.">
     <meta name="author" content="Junior Lawrence Kibirige junkib94@gmail.com">
-    <meta name="keywords" content="products">
+    <meta name="keywords" content="products ">
     <?php include_once '../includes/met.inc.php' ?>
     <title>Products : Giant Herbal Remedies</title>
     <link rel="stylesheet" href="/assets/bootstrap/5.1.3/css/bootstrap.min.css">
@@ -3418,44 +3420,19 @@ background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
 background-origin: border-box;">
-<!-- Google Tag Manager (noscript) -->
-<!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PVR4VKL"
+    <!-- Google Tag Manager (noscript) -->
+    <!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PVR4VKL"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
-<!-- End Google Tag Manager (noscript) -->
+    <!-- End Google Tag Manager (noscript) -->
     <header>
-        <div id="navbarHeader" class="bg-dark collapse">
-            <div class="bg-dark collapse" id="navbarHeader">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-8 col-md-7 py-4">
-                            <h4 class="text-white">Giant Herbal Remedies</h4>
-                            <p class="text-muted">Giant Herbal Remedies makes Herbal remedies using fresh & Herbal natural ingredients. All of our natural remedies are processed in small batches with high quality, natural, herbal ingredients, for maximum healing power.
-                                We are committed to offering the highest quality, natural remedies possible.</p>
-                        </div>
-                        <div class="col-sm-4 offset-md-1 py-4">
-                            <h4 class="text-white">Contact</h4>
-                            <ul class="list-unstyled">
-                                <li><a target="blank" href="https://bit.ly/giantherbalrems_in" style="text-decoration: none;" class="text-white">Linked In <i class="bi bi-linkedin" style="color: #0a66c2;"></i></a></li>
-                                <li><a target="blank" href="https://bit.ly/giantherbalrems_fb" class="text-white" style="text-decoration: none;">Like on <i class="bi bi-facebook" style="color: #0d6efd;"></i></a></li>
-                                <li><a target="blank" href="https://bit.ly/giantherbalrems_tw" class="text-white" style="text-decoration: none;">Follow on &nbsp; <i class="bi bi-twitter" style="color: aqua;"></i></a></li>
-                                <li><a target="blank" href="https://bit.ly/giantherbalrems_ig" class="text-white" style="text-decoration: none;">Follow on &nbsp; <i class="bi bi-instagram"></i></a></li>
-                                <li><a target="blank" href="mailto:giantherbalrems@gmail.com" class="text-white" style="text-decoration: none;">Email me <i class="bi bi-envelope-check-fill" style="color: grey;"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="navbar navbar-dark bg-dark shadow-sm">
-            <div class="container">
-                <a href="/" class="navbar-brand d-flex align-items-center">
+            <div class="container justify-content-start">
+                <a href="javascript:void(0)" class="navbar-brand d-flex align-items-center">
                     <img src="/images/favicon-32x32.png" class="bi bi-credit-card mr-2"></img>
                     &MediumSpace;
                     <strong>Products</strong>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <?php include_once('../includes/nav.php'); ?>
             </div>
         </div>
     </header>
@@ -3567,16 +3544,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </div>
     </main>
-    <footer class="text-muted py-5">
-        <div class="container">
-            <p class="float-end mb-1">
-                <a href="#"><i class="bi bi-arrow-up-circle-fill" style="color: grey; font-size: 3rem;"></i></a>
-            </p>
-            <p class="mb-0">
-                <small>Created with <i class="bi bi-heart-fill text-danger"></i> by Lawrence Junior Kibirige</small>
-            </p>
-        </div>
-    </footer>
+
+    <?php include('../includes/footer.inc.php'); ?>
     <!-- Scripts -->
     <script src="/assets/jquery/3.6.0/jquery.min.js"></script>
     <script src="/assets/popperjs/core/2.10.2/popper.min.js"></script>
