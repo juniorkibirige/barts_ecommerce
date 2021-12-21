@@ -59,7 +59,6 @@
                 let res = JSON.parse(resp)
                 console.log(res)
                 if (res.status == 0) {
-                    $('#form1-4.btn-close').click()
                     $('#contactus_submit').get(0).removeAttribute('disabled')
                     let html = '<div class="position-fixed top-0 end-0 p-3" style="z-index: 11000">'
                     html += '<div class="toast alert-danger show" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="5000"><div class="toast-header"><strong class="me-auto">Status</strong>'
@@ -72,7 +71,7 @@
                     a.innerHTML = html
                     document.body.appendChild(a)
                 } else {
-                    $('#form1-4.btn-close').click()
+                    $('#form1-4 .btn-close').click()
                     $('#contactus_submit').get(0).removeAttribute('disabled')
                     let html = '<div class="position-fixed top-0 end-0 p-3" style="z-index: 11000">'
                     html += '<div class="toast alert-success show" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="5000"><div class="toast-header"><strong class="me-auto">Status</strong>'
