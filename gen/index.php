@@ -1,4 +1,3 @@
-FU
 <?php
 include('sitemap-generator.php');
 
