@@ -26,6 +26,7 @@ We are committed to offering the highest quality, natural remedies possible.">
 We are committed to offering the highest quality, natural remedies possible.">
 <meta property="twitter:image" content="/images/android-chrome-512x512.png">
 <meta name="keywords" content=" Herbal Products, Herbal, Natural Medicine, Medicine, Natural, Giant Herbal Remedies, giantherbalrems, herbalrems, giant herbal" />
+<meta name="facebook-domain-verification" content="tkm38t22ux12u90pha1zdzs0or6qc2" />
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-JWEXB3YNKM"></script> -->
 <link rel="canonical" href="<?php echo 'http' . (($_SERVER['SERVER_PORT'] == 443) ? 's://' : '://') . $_SERVER['HTTP_HOST']; ?>/">
