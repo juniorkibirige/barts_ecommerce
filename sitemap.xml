@@ -3,31 +3,55 @@
   <!-- 12 total pages-->
   <!-- PHP-sitemap-generator by https://github.com/tristangoossens -->
   <url>
-    <loc>https://giantherbalrems.com</loc>
-    <lastmod>2021-12-21</lastmod>
+    <loc>https://www.giantherbalrems.com</loc>
+    <lastmod>2021-12-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://giantherbalrems.com</loc>
+    <lastmod>2021-12-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://www.giantherbalrems.com</loc>
+    <lastmod>2021-12-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url>
   <url>
     <loc>https://giantherbalrems.com/</loc>
-    <lastmod>2021-12-21</lastmod>
+    <lastmod>2021-12-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>https://giantherbalrems.com/products</loc>
-    <lastmod>2021-12-21</lastmod>
+    <loc>https://www.giantherbalrems.com/products</loc>
+    <lastmod>2021-12-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://www.giantherbalrems.com/products</loc>
+    <lastmod>2021-12-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url>
   <url>
     <loc>https://giantherbalrems.com/products/</loc>
+    <lastmod>2021-12-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://www.giantherbalrems.com/about</loc>
     <lastmod>2021-12-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>https://giantherbalrems.com/about</loc>
+    <loc>http://giantherbalrems.com/about</loc>
     <lastmod>2021-12-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
